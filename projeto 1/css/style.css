@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    ;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clean {
+    clear: both;
+    /* servi para limpar */
+
+}
+
+header {
+    padding: 10px 2% 40px 2%;
+    background-color: rgb(180, 180, 180)
+}
+
+.logo-1 {
+    float: left;
+    width: 150px;
+    height: 60px;
+    /*background-color: purple;*/
+    background-image: url('../imagens/logo1.png');
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.logo-2 {
+    float: right;
+    width: 160px;
+    height: 60px;
+    /*background-color: green;*/
+    background-image: url('../imagens/logo2.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width:510px) {
+    header {
+        text-align: center;
+    }
+
+    [class^="logo"] {
+        margin-top: 10px;
+        display: inline-block;
+        float: none;
+    }
+}
+
+/* FORMULARIO */
+
+section.cover-form {
+    width: 100%;
+    padding: 0 2%;
+}
+
+.bg {
+    background-image: url('../imagens/bg-form.jpg');
+    height: 500px;
+    background-size: cover;
+    /* Da uma centralizada na imagem */
+    background-position: center;
+    /*  margin-top: 10px;*/
+
+}
+
+.form-container {
+    float: right;
+    margin-right: 40px;
+    width: 400px;
+    height: 110%;
+    position: relative;
+    z-index: 2;
+    top: -5%;
+    background-color: white;
+    box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
+}
+
+.form-container h2 {
+    font-weight: normal;
+    /*  MUDA A GROSSURA DA COR */
+    background-color: rgb(210, 210, 210);
+    color: black;
+    padding: 25PX 15px;
+    /* primeiro numero se refere cima e baixo, já o segundo numero direita e esquerda */
+    font-size: 18px;
+}
+
+.form-container form {
+    margin-top: 8px;
+    padding: 15px;
+}
+
+.form-container p {
+    font-size: 14px;
+    /* 15px fica melhor*/
+    color: #525252;
+
+}
+
+.form-wraper:not(:first-child) {
+    margin-top: 40px;
+}
+
+.form-wraper:last-child {
+    margin-top: 20px;
+}
+
+.form-container form input[type=text] {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form-container form input[type=submit] {
+    background-color: #033C50;
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    font-size: 25px;
+}
+
+/* CHAMADA */
+
+section.chamada {
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    top: -50px;
+    text-align: center;
+    display: inline-block;
+
+}
+
+section.chamada .container {
+    padding: 50px 0;
+    background-color: #7c6757;
+}
+
+section.chamada h2 {
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+section.chamada h3 {
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    top: -50px;
+}
